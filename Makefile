@@ -10,6 +10,9 @@ all: README.md samples src
 		fi;\
 	fi;\
 
+	@# running the original build script
+	ant
+
 README.md:
 	@# to create the initial version of README.md
 	pandoc https://www.mpi.nl/tools/synpathy.html -t markdown > README.md;
