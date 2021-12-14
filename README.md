@@ -1,6 +1,6 @@
 # Synpathy
 
-Tool for manual syntactical annotation (editable version of the SyntaxViewer from the [TIGERSearch](http://www.ims.uni-stuttgart.de/projekte/TIGER/TIGERSearch) project)
+Tool for manual syntactical annotation (editable version of the SyntaxViewer from the [TIGERSearch](https://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/tigersearch/) project) developed by [Wolfgang Lezius](https://tigersearch.wolfganglezius.de/dissertation/).
 
 ## Using it
 
