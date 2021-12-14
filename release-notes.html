@@ -1,0 +1,66 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>Synpathy - release notes</title>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<style>
+body {
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+    background-color: #FFFFFF;
+    color: Black;
+    margin: 20;
+    padding: 2;
+}
+ul { 
+    list-style-type: square;
+}
+</style>
+</head>
+
+<body lang=EN-US>
+
+<div>
+<!-- header -->
+<p><h3 align=center>Max Planck Institute for Psycholinguistics</h3></p>
+<p><h2 align=center>Synpathy release history</h2></p>
+<p><br><br><p>
+
+<h3>February 8, 2007: Release 1.0</h3>
+<p>This is the first release of 'synpathy' as a stand-alone tool. It was derived from the Syntax-Viewer of the TIGERSearch project at the University of Stuttgart, Germany.<br>
+In order to make the Syntax-Viewer editable, following additions have been made: 
+</p>
+<ul>
+	<li>a more thorough separation of content (annotations) and structure (features).
+	</li>
+	<li>tooltips for edge labels.
+	<li>popup-menus above the nodes (single click) in order to build and manipulate the tree structure.
+	</li>
+	<li>popup-menus above the nodes (double click) for selecting the content of the nodes/edges.
+	</li>
+	<li>'read' and 'save' of Features.
+	</li>
+	<li>possibility to edit all features and to add new terminal node features.
+	</li>
+	<li>import of terminal nodes from a text file.
+	</li>
+</ul>
+<p>
+Furthermore quiet some refactoring was performed on the main view components. This was done partly because of an integration of the Syntax-Viewer into 'COREX' (exploration tool for the 'Corpus Spoken Dutch') and partly to make the code more robust, e.g. with respect to empty entries, etc. 
+</p>
+Possible future extensions may include the features:
+<ul>
+	<li>Adding and deleting terminal nodes
+	</li>
+	<li>Making the graphical representation scalable
+	</li>
+	<li>TeX export
+	</li>
+	<li>Coupling with ELAN
+	</li>
+</ul>
+
+<H3>June 14, 2007: Release 1.0.1</H3>
+This release contains a bug-fix concerning the deletion of non-terminal nodes.
+ 

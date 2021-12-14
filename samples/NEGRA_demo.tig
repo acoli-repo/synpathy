@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<corpus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://www.ims.uni-stuttgart.de/projekte/TIGER/TIGERSearch/public/TigerXML.xsd"
+        id="corpus_id">
+
+<body>
+
+<s id="s1">
+  <graph root="s1_11" discontinuous="true">
+    <terminals>
+      <t id="s1_1" word="Mögen" pos="VMFIN" morph="3.Pl.Pres.Konj" />
+      <t id="s1_2" word="Puristen" pos="NN" morph="Masc.Nom.Pl.*" />
+      <t id="s1_3" word="aller" pos="PIDAT" morph="*.Gen.Pl" />
+      <t id="s1_4" word="Musikbereiche" pos="NN" morph="Masc.Gen.Pl.*" />
+      <t id="s1_5" word="auch" pos="ADV" morph="--" />
+      <t id="s1_6" word="die" pos="ART" morph="Def.Fem.Akk.Sg" />
+      <t id="s1_7" word="Nase" pos="NN" morph="Fem.Akk.Sg.*" />
+      <t id="s1_8" word="rümpfen" pos="VVINF" morph="--" />
+      <t id="s1_9" word="," pos="$," morph="--" />
+      <t id="s1_10" word="die" pos="ART" morph="Def.Fem.Nom.Sg" />
+      <t id="s1_11" word="Zukunft" pos="NN" morph="Fem.Nom.Sg.*" />
+      <t id="s1_12" word="der" pos="ART" morph="Def.Fem.Gen.Sg" />
+      <t id="s1_13" word="Musik" pos="NN" morph="Fem.Gen.Sg.*" />
+      <t id="s1_14" word="liegt" pos="VVFIN" morph="3.Sg.Pres.Ind" />
+      <t id="s1_15" word="für" pos="APPR" morph="Akk" />
+      <t id="s1_16" word="viele" pos="PIDAT" morph="*.Akk.Pl" />
+      <t id="s1_17" word="junge" pos="ADJA" morph="Pos.*.Akk.Pl.St" />
+      <t id="s1_18" word="Komponisten" pos="NN" morph="Masc.Akk.Pl.*" />
+      <t id="s1_19" word="im" pos="APPRART" morph="Dat.Masc" />
+      <t id="s1_20" word="Crossover-Stil" pos="NN" morph="Masc.Dat.Sg.*" />
+      <t id="s1_21" word="." pos="$." morph="--" />
+    </terminals>
+    <nonterminals>
+      <nt id="s1_500" cat="NP">
+        <edge label="NK" idref="s1_3" />
+        <edge label="NK" idref="s1_4" />
+      </nt>
+      <nt id="s1_501" cat="NP">
+        <edge label="NK" idref="s1_6" />
+        <edge label="NK" idref="s1_7" />
+      </nt>
+      <nt id="s1_502" cat="NP">
+        <edge label="NK" idref="s1_12" />
+        <edge label="NK" idref="s1_13" />
+      </nt>
+      <nt id="s1_503" cat="PP">
+        <edge label="AC" idref="s1_15" />
+        <edge label="NK" idref="s1_16" />
+        <edge label="NK" idref="s1_17" />
+        <edge label="NK" idref="s1_18" />
+      </nt>
+      <nt id="s1_504" cat="PP">
+        <edge label="AC" idref="s1_19" />
+        <edge label="NK" idref="s1_20" />
+      </nt>
+      <nt id="s1_505" cat="NP">
+        <edge label="NK" idref="s1_2" />
+        <edge label="GR" idref="s1_500" />
+      </nt>
+      <nt id="s1_506" cat="VP">
+        <edge label="OA" idref="s1_501" />
+        <edge label="HD" idref="s1_8" />
+      </nt>
+      <nt id="s1_507" cat="NP">
+        <edge label="NK" idref="s1_10" />
+        <edge label="NK" idref="s1_11" />
+        <edge label="GR" idref="s1_502" />
+      </nt>
+      <nt id="s1_508" cat="S">
+        <edge label="HD" idref="s1_1" />
+        <edge label="SB" idref="s1_505" />
+        <edge label="MO" idref="s1_5" />
+        <edge label="OC" idref="s1_506" />
+      </nt>
+      <nt id="s1_509" cat="S">
+        <edge label="MO" idref="s1_508" />
+        <edge label="SB" idref="s1_507" />
+        <edge label="HD" idref="s1_14" />
+        <edge label="MO" idref="s1_503" />
+        <edge label="MO" idref="s1_504" />
+      </nt>
+      <nt id="s1_VROOT" cat="VROOT">
+        <edge label="--" idref="s1_509" />
+        <edge label="--" idref="s1_9" />
+        <edge label="--" idref="s1_21" />
+      </nt>
+    </nonterminals>
+  </graph>
+</s>
+
+<s id="s2">
+  <graph root="s2_8" discontinuous="true">
+    <terminals>
+      <t id="s2_1" word="Sie" pos="PPER" morph="3.Pl.*.Nom" />
+      <t id="s2_2" word="gehen" pos="VVFIN" morph="3.Pl.Pres.Ind" />
+      <t id="s2_3" word="gewagte" pos="ADJA" morph="Pos.*.Akk.Pl.St" />
+      <t id="s2_4" word="Verbindungen" pos="NN" morph="Fem.Akk.Pl.*" />
+      <t id="s2_5" word="und" pos="KON" morph="--" />
+      <t id="s2_6" word="Risiken" pos="NN" morph="Neut.Akk.Pl.*" />
+      <t id="s2_7" word="ein" pos="PTKVZ" morph="--" />
+      <t id="s2_8" word="," pos="$," morph="--" />
+      <t id="s2_9" word="versuchen" pos="VVFIN" morph="3.Pl.Pres.Ind" />
+      <t id="s2_10" word="ihre" pos="PPOSAT" morph="*.Akk.Pl" />
+      <t id="s2_11" word="Möglichkeiten" pos="NN" morph="Fem.Akk.Pl.*" />
+      <t id="s2_12" word="auszureizen" pos="VVIZU" morph="--" />
+      <t id="s2_13" word="." pos="$." morph="--" />
+    </terminals>
+    <nonterminals>
+      <nt id="s2_500" cat="NP">
+        <edge label="NK" idref="s2_3" />
+        <edge label="NK" idref="s2_4" />
+      </nt>
+      <nt id="s2_501" cat="NP">
+        <edge label="NK" idref="s2_10" />
+        <edge label="NK" idref="s2_11" />
+      </nt>
+      <nt id="s2_502" cat="CNP">
+        <edge label="CJ" idref="s2_500" />
+        <edge label="CD" idref="s2_5" />
+        <edge label="CJ" idref="s2_6" />
+      </nt>
+      <nt id="s2_503" cat="VP">
+        <edge label="OA" idref="s2_501" />
+        <edge label="HD" idref="s2_12" />
+      </nt>
+      <nt id="s2_504" cat="S">
+        <edge label="SB" idref="s2_1" />
+        <edge label="HD" idref="s2_2" />
+        <edge label="OA" idref="s2_502" />
+        <edge label="SVP" idref="s2_7" />
+      </nt>
+      <nt id="s2_505" cat="S">
+        <edge label="HD" idref="s2_9" />
+        <edge label="OC" idref="s2_503" />
+      </nt>
+      <nt id="s2_506" cat="CS">
+        <edge label="CJ" idref="s2_504" />
+        <edge label="CJ" idref="s2_505" />
+      </nt>
+      <nt id="s2_VROOT" cat="VROOT">
+        <edge label="--" idref="s2_506" />
+        <edge label="--" idref="s2_8" />
+        <edge label="--" idref="s2_13" />
+      </nt>
+    </nonterminals>
+  </graph>
+</s>
+
+<s id="s3">
+  <graph root="s3_13" discontinuous="true">
+    <terminals>
+      <t id="s3_1" word="Folklore" pos="NN" morph="Fem.Akk.Sg.*" />
+      <t id="s3_2" word="," pos="$," morph="--" />
+      <t id="s3_3" word="Rock" pos="NN" morph="Masc.Akk.Sg.*" />
+      <t id="s3_4" word="," pos="$," morph="--" />
+      <t id="s3_5" word="Klassik" pos="NN" morph="Fem.Akk.Sg.*" />
+      <t id="s3_6" word="und" pos="KON" morph="--" />
+      <t id="s3_7" word="Jazz" pos="NN" morph="Masc.Akk.Sg.*" />
+      <t id="s3_8" word="zu" pos="PTKZU" morph="--" />
+      <t id="s3_9" word="vermischen" pos="VVINF" morph="--" />
+      <t id="s3_10" word="reicht" pos="VVFIN" morph="3.Sg.Pres.Ind" />
+      <t id="s3_11" word="ihnen" pos="PPER" morph="3.Pl.*.Dat" />
+      <t id="s3_12" word="nicht" pos="PTKNEG" morph="--" />
+      <t id="s3_13" word="," pos="$," morph="--" />
+      <t id="s3_14" word="sie" pos="PPER" morph="3.Pl.*.Nom" />
+      <t id="s3_15" word="nutzen" pos="VVFIN" morph="3.Pl.Pres.Ind" />
+      <t id="s3_16" word="die" pos="ART" morph="Def.Fem.Akk.Sg" />
+      <t id="s3_17" word="Elektronik" pos="NN" morph="Fem.Akk.Sg.*" />
+      <t id="s3_18" word="und" pos="KON" morph="--" />
+      <t id="s3_19" word="sind" pos="VAFIN" morph="3.Pl.Pres.Ind" />
+      <t id="s3_20" word="sogar" pos="ADV" morph="--" />
+      <t id="s3_21" word="dazu" pos="PROAV" morph="--" />
+      <t id="s3_22" word="übergegangen" pos="VVPP" morph="--" />
+      <t id="s3_23" word="," pos="$," morph="--" />
+      <t id="s3_24" word="Instrumente" pos="NN" morph="Neut.Akk.Pl.*" />
+      <t id="s3_25" word="selbst" pos="ADV" morph="--" />
+      <t id="s3_26" word="zu" pos="PTKZU" morph="--" />
+      <t id="s3_27" word="bauen" pos="VVINF" morph="--" />
+      <t id="s3_28" word="." pos="$." morph="--" />
+    </terminals>
+    <nonterminals>
+      <nt id="s3_500" cat="CNP">
+        <edge label="CJ" idref="s3_1" />
+        <edge label="CJ" idref="s3_3" />
+        <edge label="CJ" idref="s3_5" />
+        <edge label="CD" idref="s3_6" />
+        <edge label="CJ" idref="s3_7" />
+      </nt>
+      <nt id="s3_501" cat="VZ">
+        <edge label="PM" idref="s3_8" />
+        <edge label="HD" idref="s3_9" />
+      </nt>
+      <nt id="s3_502" cat="NP">
+        <edge label="NK" idref="s3_16" />
+        <edge label="NK" idref="s3_17" />
+      </nt>
+      <nt id="s3_503" cat="VZ">
+        <edge label="PM" idref="s3_26" />
+        <edge label="HD" idref="s3_27" />
+      </nt>
+      <nt id="s3_504" cat="VP">
+        <edge label="OA" idref="s3_500" />
+        <edge label="HD" idref="s3_501" />
+      </nt>
+      <nt id="s3_505" cat="S">
+        <edge label="SB" idref="s3_14" />
+        <edge label="HD" idref="s3_15" />
+        <edge label="OA" idref="s3_502" />
+      </nt>
+      <nt id="s3_506" cat="VP">
+        <edge label="OA" idref="s3_24" />
+        <edge label="MO" idref="s3_25" />
+        <edge label="HD" idref="s3_503" />
+      </nt>
+      <nt id="s3_507" cat="S">
+        <edge label="SB" idref="s3_504" />
+        <edge label="HD" idref="s3_10" />
+        <edge label="DA" idref="s3_11" />
+        <edge label="NG" idref="s3_12" />
+      </nt>
+      <nt id="s3_508" cat="PP">
+        <edge label="PH" idref="s3_21" />
+        <edge label="RE" idref="s3_506" />
+      </nt>
+      <nt id="s3_509" cat="VP">
+        <edge label="MO" idref="s3_20" />
+        <edge label="MO" idref="s3_508" />
+        <edge label="HD" idref="s3_22" />
+      </nt>
+      <nt id="s3_510" cat="S">
+        <edge label="HD" idref="s3_19" />
+        <edge label="OC" idref="s3_509" />
+      </nt>
+      <nt id="s3_511" cat="CS">
+        <edge label="CJ" idref="s3_507" />
+        <edge label="CJ" idref="s3_505" />
+        <edge label="CD" idref="s3_18" />
+        <edge label="CJ" idref="s3_510" />
+      </nt>
+      <nt id="s3_VROOT" cat="VROOT">
+        <edge label="--" idref="s3_511" />
+        <edge label="--" idref="s3_2" />
+        <edge label="--" idref="s3_4" />
+        <edge label="--" idref="s3_13" />
+        <edge label="--" idref="s3_23" />
+        <edge label="--" idref="s3_28" />
+      </nt>
+    </nonterminals>
+  </graph>
+</s>
+
+</body>
+
+</corpus>

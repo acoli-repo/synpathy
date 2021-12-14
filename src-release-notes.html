@@ -1,0 +1,71 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>Synpathy - source release notes</title>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<style>
+body {
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+    background-color: #FFFFFF;
+    color: Black;
+    margin: 20;
+    padding: 2;
+}
+ul { 
+    list-style-type: square;
+}
+</style>
+</head>
+
+<body lang=EN-US>
+
+<div>
+<!-- header -->
+<p><h3 align=center>Max Planck Institute for Psycholinguistics</h3></p>
+<p><h2 align=center>Synpathy release history</h2></p>
+<p><br><br><p>
+
+<h3>February 8, 2007: Release 1.0</h3>
+<p>This is the first release of 'synpathy' as a stand-alone tool. It was derived from the Syntax-Viewer of the TIGERSearch project at the University of Stuttgart, Germany. Some changes are due to the integration of the tool into the Corpus Spoken Dutch Exploration tool "Corex". Despite some non-trivial modifications, it should be still backwards compatible. Mainly the viewing components have been refactored and extended, whilethe model classes (ims.tiger.corpus) remained unchanged. So it should be possible, if wanted, to re-integrate synpathy into TIGERSearch.<br>
+
+The changes per package:
+<ul>
+<li>package ims.tiger.corpus: completely unchanged (in order to be compatible with rest of TIGERSearch classes)</li>
+<li>package ims.tiger.export: added check in ExportManager on existence of a root node; added method saveHeader()</li>
+<li>package ims.tiger.gui.shared: changes in the AboutWindow</li>
+<li>package ims.tiger.gui.shared.progress: some classses omitted</li>
+<li>package ims.tiger.gui.tigergrapheditor: new</li>
+<li>package ims.tiger.gui.tigergraphviewer:
+<ul>
+<li>TIGERGraphViewer has been split up into several classes in order to make it subclassable from external (non-ims) classes</li>
+</ul>
+<li>package ims.tiger.gui.tigergraphviewer.draw:
+<ul>
+</li>
+<li>GraphPanel has been refactored and split up into several components.
+SVG document creation is done now by the class svggenerator instead of 'manually' filling the document. The SVG library (batik) has been updated from version 1.1.1 to 1.6
+<li>Display_Node, Display_T_Node, Display_NT_Node and Display_Sentence are thoroughly refactored (and slightly renamed). They are no longer subclasses of the corresponding classes in ims.tiger.corpus. Some added functionality concerns egde highlighting and checks on feature=null</li>
+<li>GraphConstants: tries now to read configuration file out of jar, too</li>
+</ul>
+<li>
+<li>package ims.tiger.gui.tigergraphviewer.forest:
+<ul>
+<li>CorpusForest allows empty forests, too</li>
+<li>added filter method in class ResultForest (used only by Corex)</li>
+</ul>
+<li>package ims.tiger.gui.tigergraphviewer.options: ExportImageDialog has been split up into GUI and export modul
+</li>
+<li>packages ims.tiger.index.reader, ims.tiger.system, ims.tiger.util: some classes omitted</li>
+<li>package ims.tiger.parse: new</li>
+<li>packages ims.tiger.query.api and ims.tiger.query.internalapi: some Exception-classes omitted. Consequently, CorpusQueryManager and InternalCorpusQueryManager don't throw them, QueryHandler doesn't catch them. These three classes have to be overwritten by the original classes in order to make synpathy run as part of TIGERSearch!</li>
+</ul>
+
+<H3>June 14, 2007: Release 1.0.1</H3>
+This release contains a bug-fix concerning the deletion of non-terminal nodes.
+
+</body>
+</html>
+	
+ 
